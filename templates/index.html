@@ -1,0 +1,20 @@
+{%extends "base.html"%} {%block content%}
+
+
+
+<div class="wrap">
+    <h1>Image Captioning!</h1>
+</div>
+
+
+<form action="{{url_for('after')}}" method='POST' enctype='multipart/form-data'>
+    <label class="btn btn-lg btn-dark">
+           Upload Image<input type="file" name="file1" hidden>
+        </label>
+    <label class="btn btn-danger btn-lg">Predict Caption<input type="submit" name="btn" hidden>
+            </label>
+</form>
+
+
+
+{%endblock%}
